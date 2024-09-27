@@ -1,0 +1,32 @@
+### GET 요청 테스트
+GET http://localhost:8080/boards
+Accept: application/json
+
+### POST 요청 테스트
+POST http://localhost:8080/boards
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "제목1",
+  "writer": "작성자1",
+  "content": "내용1",
+  "views": 0
+}
+
+###
+PUT http://localhost:8080/boards/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "수정 제목1",
+  "writer": "수정 작성자1",
+  "content": "수정 내용1",
+  "views": 0
+}
+
+###
+DELETE http://localhost:8080/boards/1
+
+
